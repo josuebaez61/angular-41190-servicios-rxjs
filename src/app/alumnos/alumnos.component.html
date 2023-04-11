@@ -1,0 +1,4 @@
+<div *ngIf="cargando; else notCargando">Cargando...</div>
+<ng-template #notCargando>
+  <pre>{{ alumnos | json }}</pre>
+</ng-template>
